@@ -63,7 +63,6 @@ private val KotlinJsIrCompilation.isWasmCompilation: Boolean get() =
 
 private fun MutableList<String>.addWasmArguments() {
     add("--experimental-wasm-gc")
-    add("--experimental-wasm-eh")
 }
 
 private fun MutableList<String>.addJsArguments() {

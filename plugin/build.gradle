@@ -81,7 +81,11 @@ sourceSets {
 compileKotlin {
     kotlinOptions {
         freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
-        apiVersion = "1.4" // the version of Kotlin embedded in Gradle
+        // See https://docs.gradle.org/current/userguide/compatibility.html#kotlin
+//        apiVersion = "1.4" // the version of Kotlin embedded in Gradle
+//        languageVersion = "1.6" // the version of Kotlin embedded in Gradle
+        // TODO: Remove this. Set for testing, should be the values above
+        languageVersion = kotlin_language_version
     }
 }
 

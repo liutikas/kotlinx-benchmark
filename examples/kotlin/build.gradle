@@ -22,6 +22,10 @@ sourceSets.all {
     resources.srcDirs = ["$it.name/resources"]
     languageSettings.languageVersion = kotlin_language_version
 }
+compileJava {
+    sourceCompatibility = "1.8"
+    targetCompatibility = "1.8"
+}
 
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"

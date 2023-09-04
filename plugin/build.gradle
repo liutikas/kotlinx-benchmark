@@ -6,6 +6,7 @@ buildscript {
         if (kotlinDevUrl != null) {
             maven { url = kotlinDevUrl }
         }
+        mavenLocal()
     }
     dependencies {
         classpath "kotlinx.team:kotlinx.team.infra:$infra_version"
@@ -39,6 +40,7 @@ logger.info("Using Kotlin $kotlin_version for project ${project.name}")
 repositories {
     mavenCentral()
     gradlePluginPortal()
+    mavenLocal()
 
     if (kotlinDevUrl != null) {
         maven { url = kotlinDevUrl }

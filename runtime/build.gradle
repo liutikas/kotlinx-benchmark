@@ -4,6 +4,7 @@ plugins {
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 kotlin {
@@ -90,6 +91,7 @@ if (project.findProperty("publication_repository") == "space") {
     // publish to Space repository
     publishing {
         repositories {
+            mavenLocal()
             maven {
                 name = "space"
                 url = "https://maven.pkg.jetbrains.space/kotlin/p/kotlinx/dev"

@@ -1,6 +1,7 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
+        mavenLocal()
         if (settings.hasProperty("kotlin_repo_url") && settings.kotlin_repo_url != null) {
             maven { url = settings.kotlin_repo_url }
         }
@@ -16,8 +17,3 @@ project(":runtime").name = 'kotlinx-benchmark-runtime'
 
 include "integration"
 
-include "examples"
-include "examples:kotlin-multiplatform"
-include "examples:java"
-include "examples:kotlin"
-include "examples:kotlin-kts"

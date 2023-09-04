@@ -4,6 +4,7 @@ plugins {
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 evaluationDependsOn(":kotlinx-benchmark-runtime")

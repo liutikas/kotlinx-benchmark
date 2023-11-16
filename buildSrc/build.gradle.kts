@@ -7,6 +7,4 @@ plugins {
 
 repositories {
     mavenCentral()
-    maven { setUrl("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/dev") }
-    mavenLocal()
 }
